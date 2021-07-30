@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tabelle mit zusammengefassten Zeilen</title>
+        <meta charset="UTF-8"/>
+        <style>
+            table, th, td {
+                border: solid 1px;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>colspan und rowspan</h1>
+        <table>
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>Raum</th>
+            </tr>
+            <tr>
+                <!-- Vor- und Nachnamespalte zusammenfassen -->
+                <td colspan="2">Besprechungsraum</td>
+                <td>A105a</td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>Gröschel</td>
+                <!-- Raumnummer gilt auch für nächste Zeile -->
+                <td rowspan="2">A105b</td>
+            </tr>
+            <tr>
+                <td>Thomas</td>
+                <td>Specht</td>
+            </tr>
+        </table>
+    </body>
+</html>

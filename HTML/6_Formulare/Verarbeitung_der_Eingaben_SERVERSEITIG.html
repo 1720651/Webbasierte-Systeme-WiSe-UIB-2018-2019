@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formular mit Serverseitige Verarbeitung</title>
+</head>
+<body>
+<p>Bitte geben Sie Ihren Namen ein:</p>
+<form method="get" action="answer.py">
+    <table>
+        <tr>
+            <td style="text-align:right"><label for="vorname">Vorname:</label></td>
+            <td>
+                <input type="text" id="vorname" name="vorname" required="required"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:right" ><label for="nachname">Nachname:</label></td>
+            <td>
+                <input type="text" id="nachname" name="nachname" required="required"/>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Absenden"/>
+</form>
+</body>
+</html>
+<!--
+Beispiel: Python-Skript für Antwort answer.py
+#!python
+# -*- encoding: utf-8 -*-
+import cgi
+print ("Content-type: text/html")
+print()
+print("<!DOCTYPE HTML>")
+print ("<html><head>")
+    print ("<meta charset='UTF-8'/>")
+    print ("<title>Begrüßung</title>")
+    print ("</head><body>")
+form = cgi.FieldStorage()
+vorname = form.getvalue('vorname')
+nachname = form.getvalue('nachname')
+print ("<p>Hallo", vorname,nachname,"</p>")
+print ("</body></html>")
+-->

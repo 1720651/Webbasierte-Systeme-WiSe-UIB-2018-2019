@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kunden-datenbank>
+<kunde>
+	<name>Michael Köhler</name>
+	<alter>54</alter>
+	<telefonnummer typ="mobil">+49123456789</telefonnummer>
+</kunde>
+<kunde>
+	<name>Sebastian Schäfer</name>
+	<alter>20</alter>
+	<telefonnummer typ="privat">+491234567890</telefonnummer>
+</kunde>
+</kunden-datenbank>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zahl</title>
+    </head>
+    <body>
+        <p>
+            <!-- Eingabetyp:Zahl           Initialisierungswert -->
+            <input name="anzahl" type="number" value="1" />
+        </p>
+        <p>
+            <!-- Eingabetyp:Zahl            Minimalwert  Maximalwert  Schrittweite  -->
+            <input name="wert" type="number" min="0.00" max="1000.00" step="0.01"/>
+        </p>
+        <!--
+        readonly: readonly="readonly" Reines Lesefeld, Wert nicht änderbar (false)
+        required: required="required" Feld darf nicht leer sein (false)
+        min: min="1" Mindestwert (0)
+        max: max="3" Maximalwert (unendlich)
+        step: step="0.01" Schrittweite für Aufwärts-/Abwärtspfeil (Vielfache von min)
+        -->
+    </body>
+</html>

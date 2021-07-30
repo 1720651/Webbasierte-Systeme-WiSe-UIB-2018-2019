@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Formular mit Serverseitige Verarbeitung</title>
+</head>
+<body>
+<p>Bitte geben Sie Ihren Namen ein:</p>
+<form method="get" action="answer.py">
+    <table>
+        <tr>
+            <td style="text-align:right"><label for="vorname">Vorname:</label></td>
+            <td>
+                <input type="text" id="vorname" name="vorname" required="required"/>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:right" ><label for="nachname">Nachname:</label></td>
+            <td>
+                <input type="text" id="nachname" name="nachname" required="required"/>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Absenden"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* .button -> alle Buttons // #ff0000 (rot)*/
+.button{
+    color:#ff0000;
+}
+/* a.button -> der a Button // #00ff00 (gruen)*/
+a.button{
+    color:#00ff00;
+}
+/* Verweis auf "test" */
+[name="test"]{
+    font-style:italic;
+    font-weight:bold;
+}
+
+a:hover{
+    color:#0000ff;
+}

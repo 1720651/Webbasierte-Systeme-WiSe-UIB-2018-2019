@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HTML-Seite mit Tabelle</title>
+        <meta charset="UTF-8"/>
+        <!-- Tabellenrand und -glitternetzlinien mit CSS -->
+        <style>
+            table, th, td {
+                border: solid 1px;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Professorenverzeichnis</h1>
+    <table>
+        <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Telefonnummer</th>
+            <th>Bemerkungen</th>
+        </tr>
+        <tr>
+            <td>Thomas</td>
+            <td>Specht</td>
+            <td>0621/292-6765</td>
+            <td>
+                <ul>
+                    <li>hält die Vorlesung "Webbasierte Systeme"</li>
+                    <li>leitet den Bachelor-Studiengang "Unternehmens- und
+                        Wirtschaftsinformatik"</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Sven</td>
+            <td>Klaus</td>
+            <td>0621/292-6531</td>
+            <td>
+                <ul>
+                    <li>Hält die Vorlesung "Datenmanagement"</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Knauber</td>
+            <td>0621/292-6209</td>
+            <td>
+                <ul>
+                    <li>Hält die Vorlesung "Software-Archietkturen"</li>
+                    <li>leitet den Master-Studiengang "Software Engineering"</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:left;vertical-align: bottom">L&B</td>
+            <td style="text-align: center;vertical-align:middle">C&M</td>
+            <td style="text-align: right;vertical-align:bottom">R&B</td>
+        </tr>
+    </table>
+    </body>
+</html>
